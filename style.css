@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+   
+}
+
+body {
+    background-color: blue;
+}
+
+.sky {
+    background: rgb(0, 183, 255);
+    margin: 0 auto;
+    max-width: 800px;
+    position: relative;
+    overflow: hidden;
+}
+
+.fly {
+    display: flex;
+    min-height: 500px;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes motion {
+    0% {
+
+    }
+    50% {
+        transform: translateY(15px);
+    }
+    100% {
+
+    }
+}
+
+.fly1 {
+    position: relative;
+    animation: motion 1s infinite;
+    z-index: 10;
+}
+
+.hombre {
+    position: relative;
+    z-index: 1;
+}
+
+@keyframes motion1 {
+    0% {
+        transform: rotate(10deg);
+    }
+    50% {
+        transform: rotate(-10deg);
+    }
+    100% {
+        transform: rotate(10deg);
+    }
+}
+
+.fuegoAnime {
+    position: absolute;
+    top: 117px;
+    left: 66px;
+    animation: motion1 0.09s infinite ease-in-out;
+}
+
+@keyframes motion2 {
+    100% {
+        top: 100%;
+        transform: translateX(60px);
+    }
+}
+
+.nube1 {
+    position: absolute;
+    top: -50%;
+    left: 20%;
+    animation: motion2 0.7s 1s infinite linear;
+}
+
+.nube2 {
+    position: absolute;
+    top: -50%;
+    left: 60%;
+    animation: motion2 1.3s infinite linear;
+}
+
+.nube3 {
+    position: absolute;
+    top: -50%;
+    left: 35%;
+    animation: motion2 1.3s infinite linear;
+}
+
+.nube4 {
+    position: absolute;
+    top: -50%;
+    left: 55%;
+    animation: motion2 0.7s 1s infinite linear;
+}
+
+.nube5 {
+    position: absolute;
+    top: -50%;
+    left: 65%;
+    animation: motion2 1s 2s infinite linear;
+}
+
+.nube6 {
+    position: absolute;
+    top: -50%;
+    left: 10%;
+    animation: motion2 1s 2s infinite linear;
+}
+
